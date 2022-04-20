@@ -1,0 +1,531 @@
+* {
+  margin: 0;
+  padding: 0;
+  font-family: 'poppins', sans-serif;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+body {
+  background: var(--body--color);
+}
+
+h2, h3 {
+  margin: 0;
+  padding: 0;
+}
+
+.top {
+  background: var(--bg--color);
+  padding: 3rem 0;
+  margin: 1% 8% 0 8%;
+  border-bottom-left-radius: 24px;
+  border-bottom-right-radius: 24px;
+}
+
+@media (min-width: 900px) {
+  .top {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    gap: 48rem;
+    margin-left: 0;
+    margin-right: 0;
+  }
+}
+
+.top__text {
+  display: block;
+  margin-bottom: 3rem;
+  margin-left: 1rem;
+  font-size: 14px;
+  color: var(--color--text);
+}
+
+@media (min-width: 900px) {
+  .top__text h2 {
+    font-size: 20px;
+  }
+}
+
+@media (min-width: 900px) {
+  .top__text {
+    margin-left: 3.4rem;
+  }
+}
+
+.top hr {
+  margin-right: 1rem;
+  margin-left: 1rem;
+  margin-bottom: 2.5rem;
+  height: 3px;
+  background-color: silver;
+}
+
+@media (min-width: 900px) {
+  .top hr {
+    display: none;
+  }
+}
+
+.Dark-M {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  margin-bottom: 1.8rem;
+  margin-left: 1rem;
+  margin-right: 1rem;
+}
+
+@media (min-width: 900px) {
+  .Dark-M {
+    gap: 1.2rem;
+    margin-left: 9rem;
+  }
+}
+
+.Dark-M h4 {
+  font-size: 12px;
+  color: var(--color--text);
+}
+
+@media (min-width: 900px) {
+  .Dark-M h4 {
+    font-size: 15px;
+  }
+}
+
+#dark-btn {
+  top: 20px;
+  right: 20px;
+  background: #ccc;
+  width: 45px;
+  border-radius: 15px;
+  padding: 2px 3px;
+  cursor: pointer;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-transition: padding-left 0.5s, background 0.5s;
+  transition: padding-left 0.5s, background 0.5s;
+}
+
+#dark-btn span {
+  width: 18px;
+  height: 18px;
+  background: #fff;
+  border-radius: 50%;
+  display: inline-block;
+}
+
+#dark-btn.dark-btn-on {
+  padding-left: 23px;
+  background: -webkit-gradient(linear, left top, right top, from(#378fe6), to(#3eda82));
+  background: linear-gradient(to right, #378fe6, #3eda82);
+}
+
+@media (min-width: 900px) {
+  .socials {
+    display: -ms-grid;
+    display: grid;
+    -ms-grid-columns: 1fr 1fr 1fr 1fr;
+        grid-template-columns: 1fr 1fr 1fr 1fr;
+    gap: 0;
+  }
+}
+
+.facebook {
+  background: var(--bg--color);
+  margin: -50px 10% 0% 10%;
+  border-radius: 8px;
+}
+
+.facebook .color-line {
+  background: #198ff5;
+  height: 5px;
+}
+
+.facebook .tag {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  margin-bottom: 1rem;
+  margin-top: 1.1rem;
+}
+
+.facebook .tag img {
+  margin-right: 0.7rem;
+}
+
+.facebook .tag .username {
+  color: var(--color--text);
+}
+
+.facebook .followers {
+  display: block;
+  text-align: center;
+}
+
+.facebook .followers h2 {
+  margin-bottom: 0.3rem;
+  color: var(--color--text);
+}
+
+@media (min-width: 900px) {
+  .facebook .followers h2 {
+    font-size: 50px;
+  }
+}
+
+.facebook .followers h4 {
+  margin-bottom: 0.3rem;
+  color: var(--color--text);
+}
+
+.facebook .count {
+  display: block;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  text-align: center;
+  padding-bottom: 1.5rem;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  color: #1eb386;
+}
+
+.facebook .count img {
+  margin-bottom: 0.15rem;
+}
+
+.twitter {
+  background: var(--bg--color);
+  margin: 5% 10% 0 10%;
+  border-radius: 8px;
+}
+
+@media (min-width: 900px) {
+  .twitter {
+    margin-top: -13.7%;
+  }
+}
+
+.twitter .color-line {
+  background: #1ca0f2;
+  height: 5px;
+}
+
+.twitter .tag {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  margin-bottom: 1rem;
+  margin-top: 1.1rem;
+}
+
+.twitter .tag img {
+  margin-right: 0.7rem;
+}
+
+.twitter .tag .username {
+  color: var(--color--text);
+}
+
+.twitter .followers {
+  display: block;
+  text-align: center;
+}
+
+.twitter .followers h2 {
+  margin-bottom: 0.3rem;
+  color: var(--color--text);
+}
+
+@media (min-width: 900px) {
+  .twitter .followers h2 {
+    font-size: 50px;
+  }
+}
+
+.twitter .followers h4 {
+  margin-bottom: 0.3rem;
+  color: var(--color--text);
+}
+
+.twitter .count {
+  display: block;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  text-align: center;
+  padding-bottom: 1.5rem;
+  color: #1eb386;
+}
+
+.twitter .count img {
+  margin-bottom: 0.15rem;
+}
+
+.instagram {
+  background: var(--bg--color);
+  margin: 5% 10% 0 10%;
+  border-radius: 8px;
+}
+
+@media (min-width: 900px) {
+  .instagram {
+    margin-top: -13.7%;
+  }
+}
+
+.instagram .color-line {
+  background-image: -webkit-gradient(linear, left top, right top, from(#fdc468), to(#df4996));
+  background-image: linear-gradient(to right, #fdc468, #df4996);
+  height: 5px;
+}
+
+.instagram .tag {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  margin-bottom: 1rem;
+  margin-top: 1.1rem;
+}
+
+.instagram .tag img {
+  margin-right: 0.7rem;
+}
+
+.instagram .tag .username {
+  color: var(--color--text);
+}
+
+.instagram .followers {
+  display: block;
+  text-align: center;
+}
+
+.instagram .followers h2 {
+  margin-bottom: 0.3rem;
+  color: var(--color--text);
+}
+
+@media (min-width: 900px) {
+  .instagram .followers h2 {
+    font-size: 50px;
+  }
+}
+
+.instagram .followers h4 {
+  margin-bottom: 0.3rem;
+  color: var(--color--text);
+}
+
+.instagram .count {
+  display: block;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  text-align: center;
+  padding-bottom: 1.5rem;
+  color: #1eb386;
+}
+
+.instagram .count img {
+  margin-bottom: 0.15rem;
+}
+
+.youtube {
+  background: var(--bg--color);
+  margin: 5% 10% 0 10%;
+  border-radius: 8px;
+}
+
+@media (min-width: 900px) {
+  .youtube {
+    margin-top: -13.7%;
+  }
+}
+
+.youtube .color-line {
+  background: #c4032a;
+  height: 5px;
+}
+
+.youtube .tag {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  margin-bottom: 1rem;
+  margin-top: 1.1rem;
+}
+
+.youtube .tag img {
+  margin-right: 0.7rem;
+}
+
+.youtube .tag .username {
+  color: var(--color--text);
+}
+
+.youtube .followers {
+  display: block;
+  text-align: center;
+}
+
+.youtube .followers h2 {
+  margin-bottom: 0.3rem;
+  color: var(--color--text);
+}
+
+@media (min-width: 900px) {
+  .youtube .followers h2 {
+    font-size: 50px;
+  }
+}
+
+.youtube .followers h4 {
+  margin-bottom: 0.3rem;
+  color: var(--color--text);
+}
+
+.youtube .count {
+  display: block;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  text-align: center;
+  padding-bottom: 1.5rem;
+  color: #c73844;
+}
+
+.youtube .count img {
+  margin-bottom: 0.15rem;
+}
+
+.overview {
+  display: block;
+}
+
+.overview h3 {
+  margin-left: 10%;
+  margin-top: 8%;
+  margin-bottom: 5%;
+  color: var(--color--text);
+}
+
+@media (min-width: 900px) {
+  .overview h3 {
+    margin-top: 1.5rem;
+    margin-bottom: 1.5rem;
+    font-size: 30px;
+  }
+}
+
+@media (min-width: 900px) {
+  .socials-top, .socials-bottom {
+    display: -ms-grid;
+    display: grid;
+    -ms-grid-columns: 1fr 1fr 1fr 1fr;
+        grid-template-columns: 1fr 1fr 1fr 1fr;
+  }
+}
+
+.facebook1 {
+  background: var(--bg--color);
+  margin: 0 10% 3% 10%;
+  border-radius: 8px;
+}
+
+.facebook1 .views {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+  gap: 6rem;
+  padding-top: 1.4rem;
+}
+
+.facebook1 .views h5, .facebook1 .views h6 {
+  color: var(--color--text);
+}
+
+@media (min-width: 900px) {
+  .facebook1 .views h5, .facebook1 .views h6 {
+    font-size: 20px;
+  }
+}
+
+.facebook1 .views img {
+  width: 24px;
+}
+
+.facebook1 .numbers {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+  gap: 6rem;
+  padding-top: 1rem;
+  padding-bottom: 1rem;
+}
+
+.facebook1 .numbers h4 {
+  color: var(--color--text);
+}
+
+@media (min-width: 900px) {
+  .facebook1 .numbers h4 {
+    font-size: 18px;
+  }
+}
+
+.facebook1 .numbers .reading img {
+  margin-bottom: 2px;
+}
+
+:root {
+  --body--color: #ccc;
+  --bg--color: #f8f9fe;
+  --color--text:#1a0000;
+}
+
+.dark-theme {
+  --body--color: hsl(230, 17%, 14%);
+  --bg--color:hsl(228, 28%, 20%);
+  --color--text:#f9f6f6;
+}
+/*# sourceMappingURL=style.css.map */
